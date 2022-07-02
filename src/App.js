@@ -1,10 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
-  return (
-    <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+const NavBar = () => {
+  return(
+<>
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="">
               BS-GAMES
@@ -46,6 +46,14 @@ function App() {
             </div>
           </div>
         </nav>
+</>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+{NavBar()}
     </div>
   );
 }
