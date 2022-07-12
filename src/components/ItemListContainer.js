@@ -1,8 +1,8 @@
+import Cards from "../containers/Cards"
+
 const ItemListContainer = () => {
     return(
-        <>
-        <h1>Este es el ItemListContainer</h1>
-        </>
+        <Cards/>
     );
 };
 
