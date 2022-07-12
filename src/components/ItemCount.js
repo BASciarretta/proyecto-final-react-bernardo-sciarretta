@@ -3,10 +3,14 @@ import React, {useState} from 'react'
 const ItemCount = () => {
     const [product, setProduct] = useState(1);
     const TakeOffProduct = () =>{
-      setProduct(product - 1)
+      if (product > 1) {
+        setProduct(product - 1)
+      }
     }
     const AddProduct = () =>{
-      setProduct(product + 1)
+      if (product < 5) {
+        setProduct(product + 1)
+      }
     }
   return (
   <>
