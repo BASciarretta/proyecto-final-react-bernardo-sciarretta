@@ -1,5 +1,7 @@
 import ItemCount from "./ItemCount"
 
+const onAdd = (param) => {console.log("La cantidad comprada es " + param)}
+
 const Card = (props) => {
 return (
 <>
@@ -12,7 +14,7 @@ return (
         <p className="card-text d-flex justify-content-center card-text2">{props.genre}</p>
         <p className="card-text d-flex justify-content-center card-text3">${props.price}</p>
         <div className="d-flex justify-content-center">
-        <ItemCount/>
+        <ItemCount initial={1} stock={5} onAdd={onAdd}/>
         </div>
       </div>
     </div>

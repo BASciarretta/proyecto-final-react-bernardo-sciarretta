@@ -1,22 +1,27 @@
 import React, {useState} from 'react'
 
-const ItemCount = () => {
-    const [product, setProduct] = useState(1);
-    const TakeOffProduct = () =>{
-      if (product > 1) {
-        setProduct(product - 1)
+const ItemCount = ({initial, stock, onAdd}) => {
+    const [product, setProduct] = useState(initial);
+    const RemoveProduct = () =>{
+      if(product > initial){
+        const aux = product - 1
+        setProduct(aux)
       }
     }
+
     const AddProduct = () =>{
-      if (product < 5) {
-        setProduct(product + 1)
+      if (product < stock){
+        const aux = product + 1
+        setProduct(aux)
       }
     }
+
   return (
   <>
-  <button onClick={TakeOffProduct} type="button" className="btn btn-dark">-</button>
-  <p className='ps-4 pe-4'>{product}</p>
+  <button onClick={RemoveProduct} type="button" className="btn btn-dark">-</button>
+  <p className='m-2'>{product}</p>
   <button onClick={AddProduct} type="button" className="btn btn-dark">+</button>
+  <button onClick={onAdd} type="button" className="btn btn-dark ms-2">Añadir al carrito</button>
   </>  
    );
   };
