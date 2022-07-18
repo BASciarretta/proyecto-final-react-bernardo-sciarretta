@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import customFetch from "../utils/customFetch";
 import ItemDetail from "../components/ItemDetail";
-import videojuegos from "../data/videojuegos.json";
+import videojuegos from "../data/videojuegos.json"
 
 const ItemDetailContainer = () => {
     const [productList, setProductList] = useState({});
 
    useEffect(() => {
-    customFetch(1, videojuegos[0])
+    customFetch(1, videojuegos[3])
     .then(result => setProductList(result))
     .catch(err => console.log(err))
    }, [])
