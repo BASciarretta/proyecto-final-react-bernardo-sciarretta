@@ -1,13 +1,12 @@
 import CartWidget from "./CartWidget";
+import {Link} from "react-router-dom"
 
 const NavBar = () => {
     return(
   <>
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
-              <a className="navbar-brand" href="">
-                BS-GAMES
-              </a>
+              <Link to="/" className="navbar-brand">BS-GAMES</Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -19,24 +18,10 @@ const NavBar = () => {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ">
                   <li className="nav-item">
-                    <a className="nav-link" href="">
-                      JUEGOS
-                    </a>
+                    <Link to="category/juegos" className="nav-link">JUEGOS</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="">
-                      CONSOLAS
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="">
-                      PC
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="">
-                      COMPONENTES
-                    </a>
+                    <Link to="category/consolas" className="nav-link">CONSOLAS</Link>
                   </li>
                 </ul>
               </div>

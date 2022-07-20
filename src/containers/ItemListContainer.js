@@ -1,22 +1,27 @@
-import React, {useState} from 'react'
+import { useEffect, useState } from "react";
+import { useParams } from "react-router"
+import customFetch from "../utils/customFetch";
 import ItemList from "../components/ItemList"
-import videojuegos from "../data/videojuegos.json"
+import products from "../data/products.json"
 
 const ItemListContainer = () => {
-
   const [productList, setProductList] = useState([])
+  const {id} = useParams();
 
-const myPromise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(videojuegos);
-    }, 1);
-  });
-  myPromise.then((res) => {
-    setProductList(res)
-  })
+  useEffect(() => {
+    if (id === undefined) {
+      customFetch(1, products)
+      .then(result => setProductList(result))
+      .catch(err => console.log(err))
+    } else {
+      customFetch(1, products.filter(item => item.categoryid === id))
+      .then(result => setProductList(result))
+      .catch(err => console.log(err))
+    }
 
+   }, [id])
     return(
-        <ItemList videojuegos={productList}/>
+        <ItemList products={productList}/>
     );
 }
 

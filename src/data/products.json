@@ -1,0 +1,104 @@
+[
+    {
+        "title": "WORLD OF WARCRAFT",
+        "developer": "BLIZZARD",
+        "genre": "MMO-RPG",
+        "price": 3000,
+        "thumbnail": "img/world-of-warcraft.jpg",
+        "id": "world_of_warcraft",
+        "categoryid": "juegos"
+      },
+      {
+        "title": "GOD OF WAR",
+        "developer": "SANTA MÓNICA STUDIO",
+        "genre": "Acción",
+        "price": 1000,
+        "thumbnail": "img/god-of-war.jpg",
+        "id": "god_of_war",
+        "categoryid": "juegos"
+      },
+      {
+        "title": "SUPER MARIO BROS",
+        "developer": "NINTENDO",
+        "genre": "Plataformas",
+        "price": 2500,
+        "thumbnail": "img/super-mario-bros.jpg",
+        "id": "super_mario_bros",
+        "categoryid": "juegos"
+      },
+      {
+        "title": "THE LEGEND OF ZELDA",
+        "developer": "NINTENDO",
+        "genre": "Aventuras-RPG",
+        "price": 1000,
+        "thumbnail": "img/the-legend-of-zelda.jpg",
+        "id": "the_legend_of_zelda",
+        "categoryid": "juegos"
+      },
+      {
+        "title": "RED DEAD REDEMPTION 2",
+        "developer": "ROCKSTAR GAMES",
+        "genre": "Sandbox-Aventuras",
+        "price": 3000,
+        "thumbnail": "img/rdr2.jpg",
+        "id": "red_dead_redemption_2",
+        "categoryid": "juegos"
+      },
+      {
+        "title": "ELDEN RING",
+        "developer": "FROMSOFTWARE",
+        "genre": "RPG-Acción",
+        "price": 3500,
+        "thumbnail": "img/elden-ring.jpg",
+        "id": "elden_ring",
+        "categoryid": "juegos"
+      },
+      {
+        "title": "NINTENDO 64",
+        "developer": "NINTENDO",
+        "price": 10000,
+        "thumbnail": "img/nintendo64.jpg",
+        "id": "nintendo64",
+        "categoryid": "consolas"
+      },
+      {
+        "title": "NINTENDO SWITCH",
+        "developer": "NINTENDO",
+        "price": 15000,
+        "thumbnail": "img/nintendo-switch.jpg",
+        "id": "nintendo_switch",
+        "categoryid": "consolas"
+      },
+      {
+        "title": "PLAY STATION 4",
+        "developer": "SONY",
+        "price": 20000,
+        "thumbnail": "img/ps4.jpg",
+        "id": "ps4",
+        "categoryid": "consolas"
+      },
+      {
+        "title": "PLAY STATION 5",
+        "developer": "SONY",
+        "price": 30000,
+        "thumbnail": "img/ps5.jpg",
+        "id": "ps5",
+        "categoryid": "consolas"
+      },
+      {
+        "title": "XBOX ONE",
+        "developer": "MICROSOFT",
+        "price": 25000,
+        "thumbnail": "img/xbox-one.jpg",
+        "id": "xbox_one",
+        "categoryid": "consolas"
+      },
+      {
+        "title": "XBOX SERIES",
+        "developer": "MICROSOFT",
+        "price": 30000,
+        "thumbnail": "img/xbox-serie.jpg",
+        "id": "xbox_serie",
+        "categoryid": "consolas"
+      }
+]
