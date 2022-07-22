@@ -5,6 +5,7 @@
         "genre": "MMO-RPG",
         "price": 3000,
         "thumbnail": "img/world-of-warcraft.jpg",
+        "detail": "WORLD OF WARCRAFT DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "world_of_warcraft",
         "categoryid": "juegos"
       },
@@ -14,6 +15,7 @@
         "genre": "Acción",
         "price": 1000,
         "thumbnail": "img/god-of-war.jpg",
+        "detail": "GOD OF WAR DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "god_of_war",
         "categoryid": "juegos"
       },
@@ -23,6 +25,7 @@
         "genre": "Plataformas",
         "price": 2500,
         "thumbnail": "img/super-mario-bros.jpg",
+        "detail": "SUPER MARIO BROS DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "super_mario_bros",
         "categoryid": "juegos"
       },
@@ -32,6 +35,7 @@
         "genre": "Aventuras-RPG",
         "price": 1000,
         "thumbnail": "img/the-legend-of-zelda.jpg",
+        "detail": "THE LEGEND OF ZELDA DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "the_legend_of_zelda",
         "categoryid": "juegos"
       },
@@ -41,6 +45,7 @@
         "genre": "Sandbox-Aventuras",
         "price": 3000,
         "thumbnail": "img/rdr2.jpg",
+        "detail": "RED DEAD REDEMPTION 2 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "red_dead_redemption_2",
         "categoryid": "juegos"
       },
@@ -50,6 +55,7 @@
         "genre": "RPG-Acción",
         "price": 3500,
         "thumbnail": "img/elden-ring.jpg",
+        "detail": "ELDEN RING DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "elden_ring",
         "categoryid": "juegos"
       },
@@ -58,6 +64,7 @@
         "developer": "NINTENDO",
         "price": 10000,
         "thumbnail": "img/nintendo64.jpg",
+        "detail": "NINTENDO 64 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "nintendo64",
         "categoryid": "consolas"
       },
@@ -66,6 +73,7 @@
         "developer": "NINTENDO",
         "price": 15000,
         "thumbnail": "img/nintendo-switch.jpg",
+        "detail": "NINTENDO SWITCH DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "nintendo_switch",
         "categoryid": "consolas"
       },
@@ -74,6 +82,7 @@
         "developer": "SONY",
         "price": 20000,
         "thumbnail": "img/ps4.jpg",
+        "detail": "PLAY STATION 4 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "ps4",
         "categoryid": "consolas"
       },
@@ -82,6 +91,7 @@
         "developer": "SONY",
         "price": 30000,
         "thumbnail": "img/ps5.jpg",
+        "detail": "PLAY STATION 5 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "ps5",
         "categoryid": "consolas"
       },
@@ -90,6 +100,7 @@
         "developer": "MICROSOFT",
         "price": 25000,
         "thumbnail": "img/xbox-one.jpg",
+        "detail": "XBOX ONE DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "xbox_one",
         "categoryid": "consolas"
       },
@@ -98,6 +109,7 @@
         "developer": "MICROSOFT",
         "price": 30000,
         "thumbnail": "img/xbox-serie.jpg",
+        "detail": "XBOX SERIES DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "xbox_serie",
         "categoryid": "consolas"
       }
