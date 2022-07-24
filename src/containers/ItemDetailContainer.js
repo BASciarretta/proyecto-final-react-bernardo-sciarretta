@@ -5,24 +5,24 @@ import ItemDetail from "../components/ItemDetail";
 import products from "../data/products.json"
 
 const ItemDetailContainer = () => {
-    const [productList, setProductList] = useState([]);
+    const [productDetail, setProductDetail] = useState([]);
     const {id} = useParams();
 
    useEffect(() => {
     if (id === undefined) {
         customFetch(1, products)
-        .then(result => setProductList(result))
+        .then(result => setProductDetail(result))
         .catch(err => console.log(err))
       } else {
         customFetch(1, products.filter(item => item.item === id))
-        .then(result => setProductList(result))
+        .then(result => setProductDetail(result))
         .catch(err => console.log(err))
       }
   
      }, [id])
 
     return(
-        <ItemDetail products={productList}/>
+        <ItemDetail products={productDetail}/>
     )
 }
 

@@ -4,7 +4,7 @@
         "developer": "BLIZZARD",
         "genre": "MMO-RPG",
         "price": 3000,
-        "thumbnail": "img/world-of-warcraft.jpg",
+        "thumbnail": "/img/world-of-warcraft.jpg",
         "detail": "WORLD OF WARCRAFT DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "world_of_warcraft",
         "categoryid": "juegos"
@@ -14,7 +14,7 @@
         "developer": "SANTA MÓNICA STUDIO",
         "genre": "Acción",
         "price": 1000,
-        "thumbnail": "img/god-of-war.jpg",
+        "thumbnail": "/img/god-of-war.jpg",
         "detail": "GOD OF WAR DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "god_of_war",
         "categoryid": "juegos"
@@ -24,7 +24,7 @@
         "developer": "NINTENDO",
         "genre": "Plataformas",
         "price": 2500,
-        "thumbnail": "img/super-mario-bros.jpg",
+        "thumbnail": "/img/super-mario-bros.jpg",
         "detail": "SUPER MARIO BROS DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "super_mario_bros",
         "categoryid": "juegos"
@@ -34,7 +34,7 @@
         "developer": "NINTENDO",
         "genre": "Aventuras-RPG",
         "price": 1000,
-        "thumbnail": "img/the-legend-of-zelda.jpg",
+        "thumbnail": "/img/the-legend-of-zelda.jpg",
         "detail": "THE LEGEND OF ZELDA DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "the_legend_of_zelda",
         "categoryid": "juegos"
@@ -44,7 +44,7 @@
         "developer": "ROCKSTAR GAMES",
         "genre": "Sandbox-Aventuras",
         "price": 3000,
-        "thumbnail": "img/rdr2.jpg",
+        "thumbnail": "/img/rdr2.jpg",
         "detail": "RED DEAD REDEMPTION 2 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "red_dead_redemption_2",
         "categoryid": "juegos"
@@ -54,7 +54,7 @@
         "developer": "FROMSOFTWARE",
         "genre": "RPG-Acción",
         "price": 3500,
-        "thumbnail": "img/elden-ring.jpg",
+        "thumbnail": "/img/elden-ring.jpg",
         "detail": "ELDEN RING DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "elden_ring",
         "categoryid": "juegos"
@@ -63,7 +63,7 @@
         "title": "NINTENDO 64",
         "developer": "NINTENDO",
         "price": 10000,
-        "thumbnail": "img/nintendo64.jpg",
+        "thumbnail": "/img/nintendo64.jpg",
         "detail": "NINTENDO 64 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "nintendo64",
         "categoryid": "consolas"
@@ -72,7 +72,7 @@
         "title": "NINTENDO SWITCH",
         "developer": "NINTENDO",
         "price": 15000,
-        "thumbnail": "img/nintendo-switch.jpg",
+        "thumbnail": "/img/nintendo-switch.jpg",
         "detail": "NINTENDO SWITCH DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "nintendo_switch",
         "categoryid": "consolas"
@@ -81,7 +81,7 @@
         "title": "PLAY STATION 4",
         "developer": "SONY",
         "price": 20000,
-        "thumbnail": "img/ps4.jpg",
+        "thumbnail": "/img/ps4.jpg",
         "detail": "PLAY STATION 4 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "ps4",
         "categoryid": "consolas"
@@ -90,7 +90,7 @@
         "title": "PLAY STATION 5",
         "developer": "SONY",
         "price": 30000,
-        "thumbnail": "img/ps5.jpg",
+        "thumbnail": "/img/ps5.jpg",
         "detail": "PLAY STATION 5 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "ps5",
         "categoryid": "consolas"
@@ -99,7 +99,7 @@
         "title": "XBOX ONE",
         "developer": "MICROSOFT",
         "price": 25000,
-        "thumbnail": "img/xbox-one.jpg",
+        "thumbnail": "/img/xbox-one.jpg",
         "detail": "XBOX ONE DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "xbox_one",
         "categoryid": "consolas"
@@ -108,7 +108,7 @@
         "title": "XBOX SERIES",
         "developer": "MICROSOFT",
         "price": 30000,
-        "thumbnail": "img/xbox-serie.jpg",
+        "thumbnail": "/img/xbox-serie.jpg",
         "detail": "XBOX SERIES DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "xbox_serie",
         "categoryid": "consolas"
