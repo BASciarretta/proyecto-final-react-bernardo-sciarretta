@@ -5,9 +5,11 @@ import ItemListContainer from "./containers/ItemListContainer";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
 import Cart from "./components/Cart";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CartContextProvider from "./components/CartContext";
 
 function App() {
   return (
+    <CartContextProvider>
     <BrowserRouter>
       <NavBar/>
       <Routes>
@@ -18,6 +20,7 @@ function App() {
         <Route path='/cart' element={<Cart/>} />
       </Routes>
     </BrowserRouter>
+    </CartContextProvider>
   );
 }
 

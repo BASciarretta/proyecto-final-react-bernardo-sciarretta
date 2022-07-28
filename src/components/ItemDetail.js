@@ -1,17 +1,21 @@
 import ItemCount from "./ItemCount"
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import { Link } from 'react-router-dom';
+import {CartContext} from './CartContext'
 
 const ItemDetail = ({products}) => {
    const [itemCount, setItemCount] = useState(0)
+   const context = useContext(CartContext)
 
-   const onAdd = (param) => {
-    alert("La cantidad comprada es " + param)
-    setItemCount(param)  
+   const onAdd = (qty) => {
+    alert("La cantidad comprada es " + qty)
+    setItemCount(qty) 
+    context.addToCart(products, qty) 
   }
 
     return(
-<div className="card mb-3" style={{ maxwidth: '540px' }}> 
+      <div className="p-5">
+<div className="card" style={{ maxwidth: '540px' }}> 
   <div className="row g-0">
     <div className="col-md-4 d-flex">
       <img src={products.thumbnail} className="img-fluid rounded-start flex-fill"/>
@@ -31,6 +35,7 @@ const ItemDetail = ({products}) => {
       </div>
     </div>
   </div>
+</div>
 </div>
     )
 }
