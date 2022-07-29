@@ -14,9 +14,9 @@ const ItemDetailContainer = () => {
         .then(result => setProductDetail(result))
         .catch(err => console.log(err))
       } else {
-        customFetch(1, products.filter(products => products.id === id))
-        .then(result => setProductDetail(result))
-        .catch(err => console.log(err))
+        customFetch(1, products.filter((products) => products.id === id)[0])
+        .then((result) => setProductDetail(result))
+        .catch((err) => console.log(err))
       }
   
      }, [id])
