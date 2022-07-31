@@ -1,13 +1,21 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const context = useContext(CartContext)
     return (
       <div className="container p-4">
-        <div className="d-flex justify-content-end pb-4">
-          <button onClick={context.clear} type="button" className="btn btn-danger ms-2">Eliminar todo</button>
-        </div>
+        {
+           (context.cartList.length > 0)
+           ? <div className="d-flex justify-content-end pb-4"><button onClick={context.clear} type="button" className="btn btn-danger ms-2">Eliminar todo</button></div>
+           :<h1>El carrito está vacío</h1>
+        }
+        {
+          (context.cartList.length > 0)
+          ? null
+          :<Link to='/'><button type="button" className="btn btn-danger ms-2">Ver productos</button></Link>
+        }
         {
           context.cartList.length > 0 && context.cartList.map(products => (
             <div className="card mb-3" style={{ maxwidth: '540px' }}> 
@@ -29,7 +37,7 @@ const Cart = () => {
           </div>
           ))
         }
-</div>
+        </div>
     );
   };
   
