@@ -5,19 +5,21 @@ import { Link } from "react-router-dom";
 const Cart = () => {
   const context = useContext(CartContext)
     return (
-      <div className="container p-4">
+      <div className="container">
+        <div className="row d-flex pt-5">
         {
-           (context.cartList.length > 0)
+           context.cartList.length > 0
            ? <div className="d-flex justify-content-end pb-4"><button onClick={context.clear} type="button" className="btn btn-danger ms-2">Eliminar todo</button></div>
            :<h1>El carrito está vacío</h1>
         }
         {
-          (context.cartList.length > 0)
+          context.cartList.length > 0
           ? null
           :<Link to='/'><button type="button" className="btn btn-danger ms-2">Ver productos</button></Link>
         }
         {
           context.cartList.length > 0 && context.cartList.map(products => (
+            <div key={products.id} className="col-lg-6 pt-3 pt-3">
             <div className="card mb-3" style={{ maxwidth: '540px' }}> 
             <div className="row g-0">
               <div className="col-md-4 d-flex">
@@ -25,19 +27,31 @@ const Cart = () => {
               </div>
               <div className="col-md-8">
                 <div className="card-body">
-                  <h5 className="card-title">{products.title}</h5>
+                  <h5 className="card-title text-center">{products.title}</h5>
                   <p className="card-text d-flex justify-content-center card-text2">{products.qty} productos</p>
-                  <p className="card-text d-flex justify-content-center card-text3">$ {products.price} c/u</p>
+                  <p className="card-text d-flex justify-content-center card-text3">${context.calculateTotalItem(products.id)}</p>
                   <div className="d-flex justify-content-center">
                   <button onClick={() => context.removeItem(products.id)} type="button" className="btn btn-danger ms-2">Eliminar</button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          ))
+            </div>
+          </div>))
         }
-        </div>
+        {
+          context.cartList.length > 0
+          ?<div className="col-lg-6 pt-3">
+            <ul className="list-group">
+             <li className="list-group-item">{context.calculateSubTotal()}</li>
+             <li className="list-group-item">{context.calculateTaxes()}</li>
+             <li className="list-group-item">{context.total()}</li>
+           </ul>
+          </div>
+        : null
+        }
+      </div>
+   </div>
     );
   };
   

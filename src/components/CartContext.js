@@ -22,22 +22,40 @@ const CartContextProvider = ({children}) => {
 
     }
 
+    const clear = () => {
+      setCartList([])
+      }
+
     const removeItem = (id) => {
       let newState = cartList.filter(products => products.id !== id)
       setCartList(newState)
     }
 
-    const clear = () => {
-    setCartList([])
-    }
-
     const itemQty = () => {
-      let qty = cartList.map(item => item.qty);
+      let qty = cartList.map(products => products.qty);
       return qty.reduce(((firstValue, actualValue) => firstValue + actualValue), 0);
     }
 
+    const calculateTotalItem = (id) => {
+      let totalItem = cartList.map(products => products.id).indexOf(id);
+      return cartList[totalItem].price * cartList[totalItem].qty;
+    }
+
+    const calculateSubTotal = () => {
+      let totalItem = cartList.map(products => calculateTotalItem(products.id));
+      return totalItem.reduce((firstValue, actualValue) => firstValue + actualValue);
+    }  
+
+    const calculateTaxes = () => {
+      return calculateSubTotal() * 0.21;
+    }
+
+    const total = () => {
+      return calculateSubTotal() + calculateTaxes();
+    }
+
     return(
-        <CartContext.Provider value={{cartList, addToCart, removeItem, clear, itemQty}}>
+        <CartContext.Provider value={{cartList, addToCart, removeItem, clear, itemQty, calculateTotalItem, calculateSubTotal, calculateTaxes, total}}>
           {children}
         </CartContext.Provider>
     )

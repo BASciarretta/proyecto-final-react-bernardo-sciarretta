@@ -22,7 +22,7 @@ const ItemDetail = ({products}) => {
     </div>
     <div className="col-md-8">
       <div className="card-body">
-        <h5 className="card-title">{products.title}</h5>
+        <h5 className="card-title text-center">{products.title}</h5>
         <p className="card-text">{products.detail}</p>
         <p className="card-text d-flex justify-content-center card-text1">{products.developer}</p>
         <p className="card-text d-flex justify-content-center card-text2">{products.genre}</p>
