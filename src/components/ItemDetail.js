@@ -26,7 +26,7 @@ const ItemDetail = ({products}) => {
         <p className="card-text">{products.detail}</p>
         <p className="card-text d-flex justify-content-center card-text1">{products.developer}</p>
         <p className="card-text d-flex justify-content-center card-text2">{products.genre}</p>
-        <p className="card-text d-flex justify-content-center card-text3">${products.price}</p>
+        <p className="card-text d-flex justify-content-center card-text3">${products.price} c/u</p>
         <div className="d-flex justify-content-center">
           {itemCount == 0
           ?<ItemCount initial={itemCount} stock={5} onAdd={onAdd}/>

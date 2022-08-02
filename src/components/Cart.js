@@ -17,9 +17,10 @@ const Cart = () => {
           ? null
           :<Link to='/'><button type="button" className="btn btn-danger ms-2">Ver productos</button></Link>
         }
+        <div className="col-lg-6 pt-3 pt-3">
         {
           context.cartList.length > 0 && context.cartList.map(products => (
-            <div key={products.id} className="col-lg-6 pt-3 pt-3">
+            <div key={products.id}>
             <div className="card mb-3" style={{ maxwidth: '540px' }}> 
             <div className="row g-0">
               <div className="col-md-4 d-flex">
@@ -39,16 +40,25 @@ const Cart = () => {
             </div>
           </div>))
         }
+        </div>
         {
           context.cartList.length > 0
           ?<div className="col-lg-6 pt-3">
             <ul className="list-group">
-             <li className="list-group-item">{context.calculateSubTotal()}</li>
-             <li className="list-group-item">{context.calculateTaxes()}</li>
-             <li className="list-group-item">{context.total()}</li>
+            <p className="fw-bold">Subtotal:</p>
+             <li className="list-group-item">${context.calculateSubTotal()}</li>
+             <p className="pt-4 fw-bold">+ IVA (21%):</p>
+             <li className="list-group-item">${context.calculateTaxes()}</li>
+             <p className="pt-4 fw-bold">Total:</p>
+             <li className="list-group-item">${context.total()}</li>
            </ul>
           </div>
         : null
+        }
+        {
+           context.cartList.length > 0
+           ? <div className="d-flex justify-content-end pb-4"><button type="button" className="btn btn-success ms-2">Confirmar compra</button></div>
+           :null
         }
       </div>
    </div>
