@@ -4,113 +4,125 @@
         "developer": "BLIZZARD",
         "genre": "MMO-RPG",
         "price": 3000,
-        "thumbnail": "/img/world-of-warcraft.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/world-of-warcraft.jpg?alt=media&token=385e8585-84b4-43c8-be41-3ec8e51a0f84",
         "detail": "WORLD OF WARCRAFT DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "world_of_warcraft",
-        "categoryid": "juegos"
+        "categoryid": "juegos",
+        "stock": 15
       },
       {
         "title": "GOD OF WAR",
         "developer": "SANTA MÓNICA STUDIO",
         "genre": "Acción",
         "price": 1000,
-        "thumbnail": "/img/god-of-war.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/god-of-war.jpg?alt=media&token=30352d57-0a8a-4b82-a4af-93bc209e5090",
         "detail": "GOD OF WAR DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "god_of_war",
-        "categoryid": "juegos"
+        "categoryid": "juegos",
+        "stock":10
       },
       {
         "title": "SUPER MARIO BROS",
         "developer": "NINTENDO",
         "genre": "Plataformas",
         "price": 2500,
-        "thumbnail": "/img/super-mario-bros.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/super-mario-bros.jpg?alt=media&token=4dc66d18-d49f-4113-b4fc-b347c523805a",
         "detail": "SUPER MARIO BROS DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "super_mario_bros",
-        "categoryid": "juegos"
+        "categoryid": "juegos",
+        "stock": 20
       },
       {
         "title": "THE LEGEND OF ZELDA",
         "developer": "NINTENDO",
         "genre": "Aventuras-RPG",
         "price": 1000,
-        "thumbnail": "/img/the-legend-of-zelda.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/the-legend-of-zelda.jpg?alt=media&token=0eca7501-4152-4413-a638-a64da440c577",
         "detail": "THE LEGEND OF ZELDA DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "the_legend_of_zelda",
-        "categoryid": "juegos"
+        "categoryid": "juegos",
+        "stock": 18
       },
       {
         "title": "RED DEAD REDEMPTION 2",
         "developer": "ROCKSTAR GAMES",
         "genre": "Sandbox-Aventuras",
         "price": 3000,
-        "thumbnail": "/img/rdr2.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/rdr2.jpg?alt=media&token=f66648ff-5477-43a9-9812-76cee8f9a869",
         "detail": "RED DEAD REDEMPTION 2 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "red_dead_redemption_2",
-        "categoryid": "juegos"
+        "categoryid": "juegos",
+        "stock": 14
       },
       {
         "title": "ELDEN RING",
         "developer": "FROMSOFTWARE",
         "genre": "RPG-Acción",
         "price": 3500,
-        "thumbnail": "/img/elden-ring.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/elden-ring.jpg?alt=media&token=b7aa5aff-cb3d-4fa7-aed0-e5a38e5a7dd7",
         "detail": "ELDEN RING DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "elden_ring",
-        "categoryid": "juegos"
+        "categoryid": "juegos",
+        "stock": 17
       },
       {
         "title": "NINTENDO 64",
         "developer": "NINTENDO",
         "price": 10000,
-        "thumbnail": "/img/nintendo64.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/nintendo64.jpg?alt=media&token=2990caed-f0db-48dc-a2f3-be76a3f43b6d",
         "detail": "NINTENDO 64 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "nintendo64",
-        "categoryid": "consolas"
+        "categoryid": "consolas",
+        "stock": 19
       },
       {
         "title": "NINTENDO SWITCH",
         "developer": "NINTENDO",
         "price": 15000,
-        "thumbnail": "/img/nintendo-switch.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/nintendo-switch.jpg?alt=media&token=84c14ca6-7748-4d7f-aa57-94eca7cb7a82",
         "detail": "NINTENDO SWITCH DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "nintendo_switch",
-        "categoryid": "consolas"
+        "categoryid": "consolas",
+        "stock": 9
       },
       {
         "title": "PLAY STATION 4",
         "developer": "SONY",
         "price": 20000,
-        "thumbnail": "/img/ps4.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/ps4.jpg?alt=media&token=39bc8ed1-d9f8-4991-803d-f14afa12a21a",
         "detail": "PLAY STATION 4 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "ps4",
-        "categoryid": "consolas"
+        "categoryid": "consolas",
+        "stock": 23
       },
       {
         "title": "PLAY STATION 5",
         "developer": "SONY",
         "price": 30000,
-        "thumbnail": "/img/ps5.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/ps5.jpg?alt=media&token=83bf838b-c17b-423e-89e4-4df1ee7a1891",
         "detail": "PLAY STATION 5 DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "ps5",
-        "categoryid": "consolas"
+        "categoryid": "consolas",
+        "stock": 5
       },
       {
         "title": "XBOX ONE",
         "developer": "MICROSOFT",
         "price": 25000,
-        "thumbnail": "/img/xbox-one.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/xbox-one.jpg?alt=media&token=f63bc22a-5523-4a45-b9a6-a6ffbf46ac94",
         "detail": "XBOX ONE DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "xbox_one",
-        "categoryid": "consolas"
+        "categoryid": "consolas",
+        "stock": 16
       },
       {
         "title": "XBOX SERIES",
         "developer": "MICROSOFT",
         "price": 30000,
-        "thumbnail": "/img/xbox-serie.jpg",
+        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/videojuegos-shop.appspot.com/o/xbox-serie.jpg?alt=media&token=c6cc746f-76ce-4ea5-9c93-e53546217298",
         "detail": "XBOX SERIES DETAIL: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi, culpa incidunt ab nobis quis maiores saepe molestias odio perferendis nulla id doloremque dicta deserunt nesciunt quidem, rerum harum expedita.",
         "id": "xbox_serie",
-        "categoryid": "consolas"
+        "categoryid": "consolas",
+        "stock": 21
       }
 ]

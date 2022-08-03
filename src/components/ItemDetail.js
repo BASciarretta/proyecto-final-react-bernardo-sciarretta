@@ -8,7 +8,6 @@ const ItemDetail = ({products}) => {
    const context = useContext(CartContext)
 
    const onAdd = (qty) => {
-    alert("La cantidad comprada es " + qty)
     setItemCount(qty) 
     context.addToCart(products, qty) 
   }
@@ -18,7 +17,7 @@ const ItemDetail = ({products}) => {
 <div className="card" style={{ maxwidth: '540px' }}> 
   <div className="row g-0">
     <div className="col-md-4 d-flex">
-      <img src={products.thumbnail} className="img-fluid rounded-start flex-fill"/>
+      <img src={products.thumbnail} alt="" className="img-fluid rounded-start flex-fill"/>
     </div>
     <div className="col-md-8">
       <div className="card-body">
@@ -28,8 +27,8 @@ const ItemDetail = ({products}) => {
         <p className="card-text d-flex justify-content-center card-text2">{products.genre}</p>
         <p className="card-text d-flex justify-content-center card-text3">${products.price} c/u</p>
         <div className="d-flex justify-content-center">
-          {itemCount == 0
-          ?<ItemCount initial={itemCount} stock={5} onAdd={onAdd}/>
+          {itemCount === 0
+          ?<ItemCount initial={itemCount} stock={products.stock} onAdd={onAdd}/>
           :<Link to='/cart'><button type="button" className="btn btn-danger ms-2">Comprar</button></Link>}
           </div>
       </div>

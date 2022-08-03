@@ -24,7 +24,7 @@ const Cart = () => {
             <div className="card mb-3" style={{ maxwidth: '540px' }}> 
             <div className="row g-0">
               <div className="col-md-4 d-flex">
-                <img src={products.thumbnail} className="img-fluid rounded-start flex-fill"/>
+                <img src={products.thumbnail} alt="" className="img-fluid rounded-start flex-fill"/>
               </div>
               <div className="col-md-8">
                 <div className="card-body">
