@@ -6,15 +6,15 @@ import { getDocs, query, where } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
     const [productDetail, setProductDetail] = useState([]);
-    const {id} = useParams();
+    const {Id} = useParams();
 
     useEffect(() => {
-      const detailFilter = query(productsCollection, where('id', '==', id))
+      const detailFilter = query(productsCollection, where('id', '==', Id))
       
       getDocs(detailFilter)
         .then(res => setProductDetail(res.docs.data()))
 
-    }, [id])
+    })
     return(
         <ItemDetail products={productDetail}/>
     )
