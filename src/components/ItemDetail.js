@@ -1,7 +1,7 @@
 import ItemCount from "./ItemCount"
 import {useState, useContext} from 'react'
 import { Link } from 'react-router-dom';
-import {CartContext} from './CartContext'
+import {CartContext} from './CartContext';
 
 const ItemDetail = ({products}) => {
    const [itemCount, setItemCount] = useState(0)
