@@ -9,7 +9,7 @@ const Cart = () => {
         <div className="row d-flex pt-5">
         {
            context.cartList.length > 0
-           ? <div className="d-flex justify-content-end pb-4"><button onClick={context.clear} type="button" className="btn btn-danger ms-2">Eliminar todo</button></div>
+           ?<div className="d-flex justify-content-end pb-4"><button onClick={context.clear} type="button" className="btn btn-danger ms-2">Eliminar todo</button></div>
            :<h1>El carrito está vacío</h1>
         }
         {
@@ -57,7 +57,7 @@ const Cart = () => {
         }
         {
            context.cartList.length > 0
-           ? <div className="d-flex justify-content-end pb-4"><button type="button" className="btn btn-success ms-2">Confirmar compra</button></div>
+           ?<div className="d-flex justify-content-end pb-4"><button type="button" className="btn btn-success ms-2">Confirmar compra</button></div>
            :null
         }
       </div>

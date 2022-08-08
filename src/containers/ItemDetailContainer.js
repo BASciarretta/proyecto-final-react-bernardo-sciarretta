@@ -2,19 +2,19 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router"
 import ItemDetail from "../components/ItemDetail";
 import {productsCollection} from "../utils/firebaseConfig"
-import { getDocs, query, where } from "firebase/firestore";
+import { getDoc, doc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
     const [productDetail, setProductDetail] = useState([]);
-    const {Id} = useParams();
+    const {id} = useParams();
 
     useEffect(() => {
-      const detailFilter = query(productsCollection, where('id', '==', Id))
+      const detailFilter = doc(productsCollection, id)
       
-      getDocs(detailFilter)
-        .then(res => setProductDetail(res.docs.data()))
+      getDoc(detailFilter)
+        .then((res) => setProductDetail({id: res.id, ...res.data()}))
 
-    })
+    }, [id])
     return(
         <ItemDetail products={productDetail}/>
     )

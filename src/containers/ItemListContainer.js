@@ -9,10 +9,13 @@ const ItemListContainer = () => {
   const {categoryId} = useParams();
 
   useEffect(() => {
-    const requestFilter = categoryId ? query(productsCollection, where('category', '==', categoryId)) : productsCollection
+    const requestFilter = categoryId 
+    ?query(productsCollection, where('category', '==', categoryId)) 
+    :productsCollection
+    
     getDocs(requestFilter)
     .then(result => setProductList(result.docs.map(doc => doc.data())))
-  })
+  }, [categoryId])
 
     return(
         <ItemList products={productList}/>
