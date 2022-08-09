@@ -14,7 +14,7 @@ const ItemListContainer = () => {
     :productsCollection
     
     getDocs(requestFilter)
-    .then(result => setProductList(result.docs.map(doc => doc.data())))
+    .then((result) => setProductList(result.docs.map((doc) =>({id: doc.id, ...doc.data()}))))
   }, [categoryId])
 
     return(
