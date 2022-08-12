@@ -1,9 +1,49 @@
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import { Link } from "react-router-dom";
+import { collection, serverTimestamp, setDoc, doc, updateDoc, increment } from "firebase/firestore";
+import { db } from "../utils/firebaseConfig";
 
 const Cart = () => {
   const context = useContext(CartContext)
+
+  const createOrder = () =>{
+    let itemsForDB = context.cartList.map(item => ({
+      id: item.id,
+      title: item.title,
+      price: item.price,
+      qty: item.qty
+    }))
+    let order = {
+      buyer: {
+        email: "sciarretta@hotmail.com",
+        name: "Bernardo Sciarretta",
+        phone: "1234567890"
+      },
+      date: serverTimestamp(),
+      items: itemsForDB,
+      total: context.total()
+    }
+
+    const createOrderInFirestore = async () => {
+      const newOrderRef = doc(collection(db, "orders"))
+      await setDoc(newOrderRef, order)
+      return newOrderRef
+    }
+
+    createOrderInFirestore()
+    .then(result => alert("Tu orden ha sido creada ID=" + result.id))
+
+    context.cartList.forEach(async (item) => {
+      const itemRef = doc(db, "products", item.id)
+      await updateDoc(itemRef, {
+        stock: increment(-item.qty)
+      })
+    });
+
+    context.clear()
+  }
+
     return (
       <div className="container">
         <div className="row d-flex pt-5">
@@ -57,7 +97,7 @@ const Cart = () => {
         }
         {
            context.cartList.length > 0
-           ?<div className="d-flex justify-content-end pb-4"><button type="button" className="btn btn-success ms-2">Confirmar compra</button></div>
+           ?<div className="d-flex justify-content-end pb-4"><button onClick={createOrder} type="button" className="btn btn-success ms-2">Confirmar compra</button></div>
            :null
         }
       </div>
